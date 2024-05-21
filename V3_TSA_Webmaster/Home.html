@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.js">
+    
     <link rel="stylesheet" href="styleHome.css">
     <link rel="stylesheet" href="navigationsyle.css">
     <title>Home</title>
@@ -11,48 +11,88 @@
 </head>
 <body>
     <nav class="navbar">
-        <div class="content">
-            <div class="logo "><a href="Home.html"> Webmasters TSA </a></div>
+        
+            <div class="logo "><a href="Home.html"><img src="Logo.png"></img></a></div>
             <ul class="menu-list">
                 <div class="icon cancel-btn">
                     <i class="fas fa-times"> <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>     </i>
                 </div>
-                <li class="nav-link"> <a href="#banner"> Home</a></li>
-                <li class="nav-link"> <a href="#energy"> Green </a></li>
-                <li class="nav-link"> <a href="#Importance"> Importance </a></li>
-                <li class="nav-link"> <a href="#brief"> About</a></li>
-                <li><a href="#"> </a></li>
-                <li class="button"><button><a href="Economic.html">Economic </a></button></li>
+                <li class="button"><button><a href="Solar.html">Solar </a></button></li>
                 <li> <a href="#"></a></li>
-                <li class="button"><button><a href="Societal.html">Societal </a></button></li>
+                <li class="button"><button><a href="Hydro.html">Hydro </a></button></li>
                 <li> <a href="#"></a></li>
-                <li class="button"><button><a href="sources.html">Sources</a></button></li>
+                <li class="button"><button><a href="Wind.html">Wind </a></button></li>
+                <li> <a href="#"></a></li>
+                <li class="button"><button><a href="Geothermal.html">Geothermal </a></button></li>
+                <li> <a href="#"></a></li>
+                <li class="button"><button><a href="Sources.html">Sources</a></button></li>
             </ul>
             <div class="icon menu-btn">
                 <i class="fas fa-bars"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg> </i>
             </div>
 
-        </div>
+        
     </nav>
 
 
 
-    <video autoplay loop="true">
+    <video autoplay loop muted>
         <source src="vecteezy_growing-seeds-rising-from-soil-time-lapse-4k-footage_22414103.mp4" type="video/mp4">
       </video>
-    <p>Up to 2x more Active Noise Cancellation. Transparency mode to hear the world around you. All-new Adaptive Audio intelligently tailors noise control to your environment. 
-        Spatial Audio takes immersion to a remarkably personal level. 
-        And a single charge delivers 6 hours of battery life.
+    <p class="">Please enter your business/household information below:
     </p>
 
     <br><br><br><br>
 
-    <p>Audio performance H2. More
-        immersive by
-        every measure.
-        The Apple-designed H2 chip is the force behind the advanced audio performance of AirPods Pro, working with the driver and amplifier to create crisp, high-definition sound. It uses computational algorithms to deliver noise cancellation, superior three-dimensional sound, and efficient battery life — all at once.
-        
-        
+    <p>
         </p>
+<!--
+<script src="index.js"></script>
+
+
+<section class="questionarre">
+    <link rel="stylesheet" href="Questionaire.css">
+    <div class="container">
+    
+    
+    <div id="question1" class="question active">
+        <p class="q">1. Choose your location and climate:</p> <br>
+        <label><input type="radio" name="locationClimate" value="urban"> Urban area </label><br><br>
+        <label><input type="radio" name="locationClimate" value="suburban"> Suburban area </label><br><br>
+        <label><input type="radio" name="locationClimate" value="rural"> Rural area </label> <br><br>
+        <button onclick="nextQuestion('question1', 'question2')">Next</button>
+    </div>
+    
+    <div id="question2" class="question">
+        <p class="q">2. Select your Monthly energy consumption level:</p> <br>
+        <label><input type="radio" name="energyConsumption" value="low"> Low (less than 500 kWh)</label><br><br>
+        <label><input type="radio" name="energyConsumption" value="moderate"> Moderate (500-1000 kWh)</label><br><br>
+        <label><input type="radio" name="energyConsumption" value="high"> High (more than 1000 kWh)</label> <br><br>
+        <button onclick="nextQuestion('question2', 'question3')">Next</button>
+    </div>
+    
+    <div id="question3" class="question">
+        <p class="q">3. What is your budget range?</p> <br>
+        <label><input type="radio" name="budget" value="low"> Low ($1000-$5000)</label><br><br>
+        <label><input type="radio" name="budget" value="moderate"> Moderate ($5000-$10,000)</label><br><br>
+        <label><input type="radio" name="budget" value="high"> High (over $10,000)</label><br><br>
+        <button onclick="nextQuestion('question3', 'question4')">Next</button>
+    </div>
+    
+    
+    <div id="question4" class="question">
+        <p class="q">4. Do you have suitable space or resources for renewable energy installations?</p> <br>
+        <label><input type="radio" name="suitableSpace" value="yes"> Yes, I have suitable space/resources</label><br><br>
+        <label><input type="radio" name="suitableSpace" value="no"> No, I don't have suitable space/resources</label><br><br>
+        <button onclick="nextQuestion('question4', 'result'); calculateGreenResource()">Submit</button>
+    </div>
+    
+    
+    <div id="result"></div>
+    <button id="resetButton" onclick="resetQuiz()">Reset</button>
+    </div>
+    </section>
+
+!-->
 </body>
 </html>
